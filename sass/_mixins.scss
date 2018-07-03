@@ -1,0 +1,21 @@
+@mixin font($ffamily: null, $fsize: null, $fweight: null, $fcolor: null, $l-margin: null, $r-margin: null, $t-margin: null, $b-margin: null, $l-pad: null, $r-pad: null, $t-pad: null, $b-pad: null) {
+	font-family: $ffamily;
+	font-size: $fsize;
+	font-weight: $fweight;
+	color: $fcolor;
+	margin-left: $l-margin;
+	margin-right: $r-margin;
+	margin-top: $t-margin;
+	margin-bottom: $b-margin;
+	padding-left: $l-pad;
+	padding-right: $r-pad;
+	padding-top: $t-pad;
+	padding-bottom: $b-pad;
+}
+
+
+
+@mixin wb {
+	background-color: white;
+	color: $dgrey;
+}

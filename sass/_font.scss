@@ -1,0 +1,159 @@
+@mixin bhf {
+	font-size: $lh;
+	font-family: $hf;
+	font-weight: $hw;
+	@media(max-width: 1200px) {
+		font-size: $mlh;
+		margin-bottom: 25px;
+	}
+	@media(max-width: 992px) {
+		font-size: $m1lh;
+		margin-bottom: 20px;
+	}
+}
+@mixin shf {
+	font-size: $sh;
+	font-family: $hf;
+	font-weight: $hw;
+	@media(max-width: 1200px) {
+		font-size: $msh;
+		margin-bottom: 25px;	
+	}
+	@media(max-width: 992px) {
+		font-size: $m1sh;
+		margin-bottom: 20px;
+	}
+}
+@mixin bcf {
+	font-size: $bc;
+	font-family: $cf;
+	font-weight: $cw;
+	@media(max-width: 1200px) {
+		font-size: $mbc;
+		margin-bottom: 25px;
+	}
+	@media(max-width: 992px) {
+		font-size: $m1bc;
+		margin-bottom: 10px;
+	}	
+}
+@mixin scf {
+	font-size: $sc;
+	font-family: $cf;
+	font-weight: $cw;
+	@media(max-width: 1200px) {
+		font-size: $msc;
+		margin-bottom: 25px;
+	}
+	@media(max-width: 992px) {
+		font-size: $m1sc;
+		margin-bottom: 20px;
+	}
+}
+@mixin li {
+	font-size: $sc;
+	font-weight: $lw;
+	font-family: $hf;
+}
+@mixin linkfont($ffamily: null, $fsize: null, $fweight: null, $fcolor: null, $margin: null, $padding: null, $transition: null, $back-color: null, $bord-rad: null) {
+	font-family: $ffamily;
+	font-size: $fsize;
+	font-weight: $fweight;
+	color: $fcolor;
+	margin: $margin;
+	padding: $padding;
+	background-color: $back-color;
+	border-radius: $bord-rad;
+	text-decoration: none;
+	text-align: center;
+	transition: $transition;
+}
+@mixin link($br: null) {
+	transition: all 0.35s ease;
+	border-radius: $br;
+	text-decoration: none;
+	text-align: center;
+} 
+@mixin a {
+	// @include linkfont($pri-font,18px,700,white,0,24px,all 0.35s ease,$bg-green,35px);
+	@include li;
+	@include link(35px);
+	@include shf;
+	@include bac($green,white,center);
+	padding: 24px;
+	font-size: $sc;
+	@media (max-width: 1200px) {
+		font-size: 15px;
+	 	padding-top: 15px;
+	 	padding-bottom: 15px;
+	}
+	@media (max-width: 992px) {
+		font-size: 10px;
+	 	padding-top: 10px;
+	 	padding-bottom: 10px;
+	}
+}
+@mixin ahov {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+@mixin icon($ffamily: null, $fsize: null, $cont: null, $fcolor: null, $p-right: null,$border: null,$bradius: null) {
+	font-family: $ffamily;
+	font-size: $fsize;
+	content: '\$fweight';
+	color: $fcolor;
+	padding-right: $p-right;
+	text-align: center;
+	border: $border;
+	border-radius: $bradius;
+}
+@mixin h1 {
+	@include font($pri-font,50px,700,#222222,0,0,0,0,0,0,0,0);
+	@media(max-width: 992px) {
+		font-size: 22px;
+	}
+}
+
+@mixin h2 {
+	@include font($pri-font,50px,700,#222222,0,0,0,0,0,0,0,0);
+	@media(max-width: 992px) {
+		font-size: 22px;
+	}
+}
+
+@mixin h3 {
+	@include font($pri-font,50px,700,#222222,0,0,0,0,0,0,0,0);
+	@media(max-width: 992px) {
+		font-size: 22px;
+	}
+}
+
+@mixin h4 {
+	@include font($sec-font,30px,400,#5f7663,0,0,15px,100px,0,0,0,0);
+	@media(max-width: 992px) {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+}
+
+@mixin h5 {
+	@include font($pri-font,20px,700,#222222,0,0,0,0,0,0,20px,0);
+	line-height: 40px;
+	@media(max-width: 992px) {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+}
+
+@mixin h6 {
+	@include font($sec-font,22px,400,#777777,0,0,0,120px,8%,8%,5px,5px);
+	@media(max-width: 992px) {
+		font-size: 14px;
+		padding: 5px;
+		margin-bottom: 30px;
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+}
+

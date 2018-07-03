@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  	<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		window.onload = function(){
+			$('.loader').fadeOut('slow', function() {
+		      $(this).remove();
+		    });
+		};
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				if($("#clo").is(':hidden')){
+				$("#bar").hide("fast",function(){
+					$("#clo").show("fast");
+				});
+			}
+			else{
+				$("#clo").hide("fast",function(){
+					$("#bar").show("fast");
+					});	
+				}
+			});
+		});
+	</script>
+</head>	
+<body>
+	<div class="loader"></div>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#treenav">
+				<span class="fa fa-bars" id="bar"></span>
+				<span class="fa fa-close" id="clo" style="display: none;"></span>	
+			</button>
+			<a class="navbar-brand" href="#"><img src="images/tree.jpg" style="padding-bottom: 5px;"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="treenav">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#th1">ABOUT</a></li>
+				<li><a href="#blogs">BLOG</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contactus">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="head1" id="th1">
+			<div class="row wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h1>CREATIVE DIGITAL SOLUTIONS</h1>
+					<h2>proin iaculis purus consequate sem cure</h2>
+					<a href="#">VIEW PORTFOLIO</a>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+			<div class="head21">
+				<div class="row">
+					<h1>PROFESSIONAL SERVICES</h1>
+					<h2>proin iaculis purus consequate sem cure</h2>
+				</div>
+			</div>
+			<div class="head22">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images/iconheart.jpg" >
+						<h1>BEAUTIFUL DESIGNS</h1>
+						<h2>proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipti ahneanrhoncus poseure oi in tincidunt</h2>
+					</div>
+					<div class="col-md-4">
+						<img src="images/iconmobile.jpg" >
+						<h1>RESPONSIVE WEB</h1>
+						<h2>proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipti ahneanrhoncus poseure oi in tincidunt</h2>
+					</div>
+					<div class="col-md-4">
+						<img src="images/icongraph.jpg" >
+						<h1>MARKETING TOOLS</h1>
+						<h2>proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipti ahneanrhoncus poseure oi in tincidunt</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head3">
+			<div class="row flex-container_row">
+				<div class="col-md-4">
+					<img src="images/gear.png" class="img-responsive" width="90%">
+				</div>
+				<div class="col-md-8 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h1>JUST RELAX<span style="color: #7cc576"> &</span><br>LET US DO THE HEAVY LIFTING</h1>
+					<ul>
+						<h2>proin iaculis purus consequat sem cure digini ssim. Donec portitora entume suscipti ahneanrhoncus poseure oi in tincidunt</h2>
+						<li><h2>    Initial Setup & Customizations</h2></li>
+						<li><h2>    Regular Updates</h2></li>
+						<li><h2>    Round The Clock Support</h2></li>
+					</ul>
+					<a href="#">LEARN MORE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head4">
+			<div class="row head41 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+				<h1>LATEST PROJECT</h1>
+				<h2>proin iaculis purus consequate sem cure</h2>
+			</div>
+			<div class="row head42 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">			<div class="col-md-1">
+				</div>
+				<div class="col-md-5 animated fadeIn">
+					<h1>DEVELOPING A FRAMEWORK</h1>
+					<ul><h2>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahneanrhoncus poseure odio in tincidunt</h2>
+					
+						<li><h1><div class="x"><img src="images/basket.jpg"></div>  E-commerce Ready</h1>
+						<h2>Proin iaculis purus consequat sem cure digini ssim</h2></li>
+						<li><h1><div class="x"><img src="images/laptop.jpg"></div>  Powerful SEO Features</h1>
+						<h2>Proin iaculis purus consequat sem cure digini ssim</h2></li>
+						<li><h1><div class="x" style="border-radius: 54%;"><img src="images/lock.jpg" style="height: 30px;"></div>  Secure Encryption</h1>
+						<h2>Proin iaculis purus consequat sem cure digini ssim</h2></li>
+					
+					<h2>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahneanrhoncus poseure odio in</h2></ul>
+					<a href="#">VIEW DETAILS  <span class="fa fa-arrow-right"></span></a>
+				</div>
+				<div class="col-md-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+					<img class="img-responsive" src="images/air.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head5" id="blogs">
+			<div class="row wow fadeIn row1" data-wow-duration="2s" data-wow-delay="0.3s">
+				<h1>CULTURE & VALUES</h1>
+				<h2>Proin iaculis purus consequat sem cure</h2>
+			</div>
+			<div class="row wow fadeIn row2" data-wow-duration="2s" data-wow-delay="0.3s" id="bordrow">
+				<div class="col-md-2">
+					<i class="fa fa-signal"></i>
+				</div>
+				<div class="col-md-3" data-aos="fade-in">
+				</div>
+				<div class="col-md-2">
+					<i class="fa fa-star"></i>
+				</div>
+				<div class="col-md-3" data-aos="fade-in">
+				</div>
+				<div class="col-md-2">
+					<i class="fa fa-music"></i>
+				</div>
+			</div>
+			<div class="row wow fadeIn row3" data-wow-duration="2s" data-wow-delay="0.3s">
+				<div class="col-md-4">
+					<i class="fa fa-signal"></i>
+					<h1>WORK LIFE BALANCE</h1>
+					<h2>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahneanrhoncus poseure odio in tincidunt</h2>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-star"></i>
+					<h1>QUALITY OVER QUANTITY</h1>
+					<h2>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahneanrhoncus poseure odio in tincidunt</h2>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-music"></i>
+					<h1>DELIVER EXCELLENCE</h1>
+					<h2>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahneanrhoncus poseure odio in tincidunt</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head6 wow fadeIn" id="portfolio" data-wow-duration="2s" data-wow-delay="0.3s">
+			<h1>OUR AWESOME CLIENTS</h1>
+			<h2>Proin iaculis purus consequat sem cure</h2>
+			<div class="row wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+				<div class="flex-container_row">
+					<div class="col-md-3">
+						<img src="images/client1.jpg" class="img-circle" width="100%">
+					</div>
+					<div class="col-md-9">
+						<div class="flex-container_row">
+							<img src="images/triangleleft.jpg" class="imgtriangles">
+							<h3>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahnean rhoncus<span class="ownname" style="color: #7cc576;"><br> - Jamie Richardson, Founder of Cocoa Media</span></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+				<div class="flex-container_row" style="flex-wrap: wrap-reverse;">
+					<div class="col-md-9">
+						<div class="flex-container_row">
+							<h3>Proin iaculis purus consequat sem cure digini ssim. Dorec portitora entume suscipt iahnean rhoncus<span class="ownname" style="color: #7cc576;"><br> - Kim Thompson, Founder of Rainel</span></h3>
+							<img src="images/triangleright.jpg" class="imgtriangles">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<img src="images/client2.jpg" class="img-circle" width="100%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head7 wow fadeIn" id="contactus" data-wow-duration="2s" data-wow-delay="0.3s">
+			<h1>READY TO TALK ABOUT YOUR NEXT PROJECT</h1>
+			<a href="#">CONTACT US</a>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head8" >
+			<div class="row">
+				<div class="col-md-6">
+					<div class="col-sm-6">
+						<a href="#"><img src="images/envato.png" class="img-responsive"></a>
+					</div>
+					<div class="col-sm-6">
+						<a href="#"><img src="images/wordpress.png" class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="col-sm-6">
+						<a href="#"><img src="images/aetuts.png" class="img-responsive"></a>
+					</div>
+					<div class="col-sm-6">
+						<a href="#"><img src="images/microlancer.png" class="img-responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head9" id="test">
+			<div class="row">
+				<div class="col-md-4 wow fadeIn col1" data-wow-duration="2s" data-wow-delay="0.3s" id="head9col1">
+					<h2>CONTACT US</h2>
+					<ul>
+						<a href="#"><li><i class="fa fa-map-marker" id="navi"></i><h1> 55, Main St. Toronto ON ,MIH 3A5</h1></li></a>
+						<a href="#"><li><span class="glyphicon glyphicon-phone" id="phn"></span><h1> (416) 555-5252</h1></li></a>
+						<a href="#"><li><span class="glyphicon glyphicon-envelope" id="env"></span><h1> hello@treehouse.com</h1></li></a>
+					</ul>
+				</div>
+				<div class="col-md-4 col2 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h2>LATEST POSTS</h2>
+					<ul style="padding-right: 2%;">
+						<a href="#"><li><span class="fa fa-vcard-o"></span><h1> Made with Love in Toronto</h1></li></a>
+						<a href="#"><li><span class="fa fa-vcard-o"></span><h1> Startup News and Emerging Tech</h1></li></a>
+						<a href="#"><li><span class="glyphicon glyphicon-picture"></span><h1> Bitcoin will soon Rule the World</h1></li></a>
+						<a href="#"><li><span class="fa fa-vcard-o"></span><h1> Wearable Technology on the Rise</h1></li></a>
+						<a href="#"><li><span class="glyphicon glyphicon-play"></span><h1> Learn Web Design in 30 Days</h1></li></a>
+					</ul>
+				</div>
+				<div class="col-md-4 wow fadeIn col3" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h2>LATEST TWEETS</h2>
+					<ul>
+						<a href="#"><li><h1> Confucius: Life is really simple, but we insist on making it difficult<b> #famousquotes</b><br><medium>8 mins ago</medium></h1></li></a>
+						<a href="#"><li><h1>Grab the free Treehouse web Template at FreebiesExpress!<b> #freebies #templates</b><br><medium>2 days ago</medium></h1></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="head10">
+			<div class="row">
+				<div class="col-md-4">
+					<h1><small><span class="fa fa-copyright" style="font-size: 15px; padding: 0;background-color: white;color: #222222;"></span> Copyright 2014 freebiesexpress.com</small></h1>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><span class="fa fa-twitter-square" id="brandfa1"></span></a>   <a href="#"><span class="	fa fa-facebook-official" id="brandfa2"></span></a>   <a href="#"><span class="fa fa-pinterest-square" id="brandfa3"></span></a>   <a href="#"><span class="fa fa-google-plus-square" id="brandfa4"></span></a>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+  			new WOW().init(); 
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

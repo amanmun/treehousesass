@@ -1,0 +1,46 @@
+@mixin li {
+	list-style-type: none;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+@mixin libef ($ffamily: null, $fsize: null, $fcontent: null, $fcolor: null, $padding: null) {
+	font-family: $ffamily;
+	font-size: $fsize;
+	content: $fcontent;
+	color: $fcolor;
+	padding-right: $padding;
+	text-align: center;
+	@media(max-width: 1200px) {
+		font-size: 25px;
+		padding-right: 10px;
+	}
+	@media(max-width: 992px) {
+		font-size: 20px;
+		padding-right: 10px;
+	}
+}
+@mixin pad($pt: null,$pr: null,$pb: null,$pl: null) {
+	padding-top: $pt;
+	padding-right: $pr;
+	padding-bottom: $pb;
+	padding-left: $pl;
+}
+@mixin mar($mt: null,$mr: null,$mb: null,$ml: null) {
+	margin-top: $mt;
+	margin-right: $mr;
+	margin-bottom: $mb;
+	margin-left: $ml;
+}
+@mixin wb {
+	background-color: white;
+	color: $dgrey;
+}
+@mixin bor($bo: null,$br: null) {
+	border: $bo;
+	border-radius: $br;
+}
+@mixin bac($bc: null,$co: null,$ta: null) {
+	background-color: $bc;
+	color: $co;
+	text-align: $ta;
+}
