@@ -14,7 +14,6 @@
 	z-index: 9999;
 	background: url('../images/greenpre.gif') 50% 50% no-repeat rgb(249,249,249);
 }
-
 .navbar {
 	.fa {
 		color: $grey;
@@ -432,21 +431,6 @@
 				padding: 1px;
 			}
 		}
-		.fa-signal:hover {
-			color: $green;
-			border: 2px solid $green;
-			transition: all 0.5s linear;
-		}
-		.fa-star:hover {
-			color: #FEF0AD;
-			border: 2px solid #FEF0AD;
-			transition: all 0.5s linear;
-		}
-		.fa-music:hover {
-			color: #7aa8e8;
-			border: 2px solid #7aa8e8;
-			transition: all 0.5s linear;
-		}
 		padding-top: 8%;
 		@media(max-width: 992px) {
 			display: none;
@@ -480,21 +464,6 @@
 				@include bor(3px solid $grey,50%);
 				padding: 20px;
 			}
-		}
-		.fa-signal:hover {
-			color: $green;
-			border: 2px solid $green;
-			transition: all 0.5s linear;
-		}
-		.fa-star:hover {
-			color: #FEF0AD;
-			border: 2px solid #FEF0AD;
-			transition: all 0.5s linear;
-		}
-		.fa-music:hover {
-			color: #7aa8e8;
-			border: 2px solid #7aa8e8;
-			transition: all 0.5s linear;
 		}
 	}
 	@media(max-width: 992px) {
